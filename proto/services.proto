@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package proto;
+
+option go_package = "github.com/antisanyatariya/coursework";
+
+message LoginRequest{
+  string Login = 1;
+  string Password = 2;
+}
+
+message AuthResponse{
+  string Token = 1;
+}
+
+service AuthServices{
+  rpc Login(LoginRequest) returns (AuthResponse);
+}
