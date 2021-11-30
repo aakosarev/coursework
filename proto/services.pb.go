@@ -4,7 +4,7 @@
 // 	protoc        v3.19.1
 // source: services.proto
 
-package coursework
+package proto
 
 import (
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
